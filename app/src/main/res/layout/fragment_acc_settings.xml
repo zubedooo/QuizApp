@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/profilePictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/acc_design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="#64A69A"
+            android:src="@drawable/path3"
+            android:elevation="-1dp"/>
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_one"
+        android:layout_centerInParent="true"
+        android:elevation="5dp"
+        android:padding="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/resetPasswordLayout">
+
+        <EditText
+            android:id="@+id/existingPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter existing password."
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/newPasswordEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter new password"
+            android:layout_below="@+id/existingPassword"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/reExistingPasswordEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter new password again"
+            android:layout_below="@id/newPasswordEntry"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/resetPasswordFirebaseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset password"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFFFF"
+            android:background="@drawable/custom_button_two"
+            android:layout_below="@+id/reExistingPasswordEntry"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/cancelChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:layout_below="@+id/resetPasswordFirebaseButton"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profilePictureLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nouse1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USN" />
+
+                <EditText
+                    android:id="@+id/putUSN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nouse1"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/allowPutUSN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nouse2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NAME" />
+
+                <EditText
+                    android:id="@+id/putUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nouse2"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:padding="5dp"/>
+
+                <ImageView
+                    android:id="@+id/allowPutUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nouse3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEPARTMENT" />
+
+                <EditText
+                    android:id="@+id/putDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nouse3"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:inputType="none"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/allowPutDepartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nouse4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEMESTER" />
+
+                <EditText
+                    android:id="@+id/putSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nouse4"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/allowPutSemester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nouse5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SECTION" />
+
+                <EditText
+                    android:id="@+id/putSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nouse5"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/allowPutSection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit_black_24dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/changePasswordButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:text="Change Password"
+                android:paddingBottom="10dp"/>
+
+            <Button
+                android:id="@+id/updateInfoButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_two"
+                android:clickable="true"
+                android:text="Update account "
+                android:textAllCaps="false"
+                android:textColor="#FFFFFFFF"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

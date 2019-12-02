@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionFragment">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <FrameLayout
+            android:id="@+id/layout_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/image_question"
+                android:scaleType="fitCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_question_image"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose an option"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/chk_box_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer A"/>
+
+            <RadioButton
+                android:id="@+id/chk_box_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer B"/>
+
+            <RadioButton
+                android:id="@+id/chk_box_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer C"/>
+
+            <RadioButton
+                android:id="@+id/chk_box_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer D"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

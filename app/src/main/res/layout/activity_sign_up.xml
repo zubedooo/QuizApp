@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fulllogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Student sign up"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/signUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter email"
+                android:inputType="textEmailAddress"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/takeUSN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter USN"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/takeUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter user name"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/takeDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter department"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/takeSemester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter semester"
+                android:inputType="number"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/takeSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter section"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/signUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/reSignUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password again"
+                android:inputType="textPassword"
+                android:padding="20dp" />
+
+            <Button
+                android:id="@+id/signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_two"
+                android:onClick="signUp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFFFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63C"
+    tools:context=".TestKeyActivity">
+
+    <ImageView
+        android:id="@+id/key_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="goBackHome"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/random_logo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/path866" />
+
+        <TextView
+            android:id="@+id/key_test_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/random_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Test Name"
+            android:textColor="#FFFFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_enter_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/key_test_name"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Enter key"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/take_key"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_enter_key"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="#C4C4C4" />
+
+        <Button
+            android:id="@+id/startQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/take_key"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_button_two"
+            android:minHeight="40sp"
+            android:onClick="startQuestions"
+            android:paddingHorizontal="40dp"
+            android:text="Start Test"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

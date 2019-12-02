@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63E"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/emailId"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/path866" />
+
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="50dp"
+        android:backgroundTint="#FFFFFFFF"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFFFF"
+        android:textColorHint="#FFFFFFFF" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:backgroundTint="#FFFFFFFF"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFFFF"
+        android:textColorHint="#FFFFFFFF" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_button_one"
+        android:onClick="signIn"
+        android:paddingHorizontal="40dp"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="#397367"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signUnActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signInButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="signUpActivity"
+        android:text="Sign Up"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:elevation="-1dp"
+        android:src="@drawable/path1"/>
+
+</RelativeLayout>
